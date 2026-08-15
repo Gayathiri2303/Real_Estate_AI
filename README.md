@@ -96,6 +96,12 @@ Machine learning models are used to estimate property prices based on property c
 
 
 
+## 📸 Application Screenshots
+
+
+
+
+
 \### 🤖 AI / Machine Learning
 
 
@@ -120,3 +126,25 @@ trained\_models/
 
 └── feature\_columns.json
 
+## 📸 Application Screenshots
+
+### 🏠 Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### 🏡 Property Price Prediction
+![Prediction Input](screenshots/prediction-input.png)
+
+### 💰 Prediction Result
+![Prediction Result](screenshots/prediction-result.png)
+
+### 📊 Analytics & Charts
+![Analytics Charts](screenshots/analytics-charts.png)
+
+### 👁️ AI Image Vision
+![AI Image Vision](screenshots/ai-imagevision.png)
+
+### 🗺️ Property Map
+![Property Map](screenshots/property-map.png)
+
+### 🤖 AI Real Estate Chatbot
+![AI Chatbot](screenshots/ai-chatbot.png)
