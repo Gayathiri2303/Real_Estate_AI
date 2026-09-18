@@ -6,7 +6,7 @@ import os
 import random
 
 # Import the routers we just created
-from backend.api import login, property_images, vision, upload
+from api import login, property_images, vision, upload
 
 app = FastAPI(
     title="Real Estate AI API",
