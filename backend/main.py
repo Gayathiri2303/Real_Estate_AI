@@ -1,14 +1,16 @@
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from typing import Optional
 import csv
 import os
 import random
 
+# Import the routers we just created
+from backend.api import login, property_images, vision, upload
+
 app = FastAPI(
     title="Real Estate AI API",
-    description="Backend with 500 properties",
+    description="Backend with 500 properties + AI features",
     version="2.0.0"
 )
 
@@ -21,6 +23,12 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# Register all routers
+app.include_router(login.router, prefix="/api")
+app.include_router(property_images.router, prefix="/api")
+app.include_router(vision.router, prefix="/api")
+app.include_router(upload.router, prefix="/api")
+
 # ====================== LOAD 500 PROPERTIES ======================
 PROPERTIES = []
 
@@ -29,51 +37,47 @@ def load_properties():
     csv_path = os.path.join(os.path.dirname(__file__), "properties_500.csv")
     
     if not os.path.exists(csv_path):
-        print("⚠️ CSV file not found. Using empty list.")
+        print("⚠️ CSV file not found")
         PROPERTIES = []
         return
 
     with open(csv_path, mode="r", encoding="utf-8") as file:
         reader = csv.DictReader(file)
         for row in reader:
-            PROPERTIES.append({
-                "id": int(row["id"]),
-                "address": row["address"],
-                "city": row["city"],
-                "state": row["state"],
-                "price": int(float(row["price"])),
-                "bedrooms": int(row["bedrooms"]),
-                "bathrooms": float(row["bathrooms"]),
-                "sqft": int(row["sqft"]),
-                "year_built": int(row["year_built"]),
-                "lat": float(row["lat"]),
-                "lng": float(row["lng"]),
-                "description": row["description"],
-                "condition": row["condition"]
-            })
+            try:
+                PROPERTIES.append({
+                    "id": int(row["id"]),
+                    "address": row["address"],
+                    "city": row["city"],
+                    "state": row["state"],
+                    "price": int(float(row["price"])),
+                    "bedrooms": int(row["bedrooms"]),
+                    "bathrooms": float(row["bathrooms"]),
+                    "sqft": int(row["sqft"]),
+                    "year_built": int(row["year_built"]),
+                    "lat": float(row["lat"]),
+                    "lng": float(row["lng"]),
+                    "description": row["description"],
+                    "condition": row["condition"]
+                })
+            except Exception as e:
+                print(f"Error loading row: {e}")
+                continue
+
     print(f"✅ Loaded {len(PROPERTIES)} properties successfully!")
 
 # Load data when the app starts
 load_properties()
 
-# ====================== MODELS ======================
-class LoginRequest(BaseModel):
-    email: str
-    password: str
-
-class RegisterRequest(BaseModel):
-    name: str
-    email: str
-    password: str
-
-# ====================== ENDPOINTS ======================
+# ====================== MAIN ENDPOINTS ======================
 
 @app.get("/")
 def root():
     return {
         "message": "Real Estate AI API is running!",
         "total_properties": len(PROPERTIES),
-        "status": "healthy"
+        "status": "healthy",
+        "version": "2.0.0"
     }
 
 @app.get("/api/health")
@@ -137,35 +141,4 @@ def predict(
         "currency": "USD",
         "confidence": "medium",
         "message": "Prediction successful"
-    }
-
-@app.post("/api/login")
-def login(data: LoginRequest):
-    return {
-        "success": True,
-        "message": "Login successful",
-        "user": {
-            "email": data.email,
-            "name": data.email.split("@")[0]
-        },
-        "token": "demo-token-12345"
-    }
-
-@app.post("/api/register")
-def register(data: RegisterRequest):
-    return {
-        "success": True,
-        "message": "Registration successful",
-        "user": {
-            "name": data.name,
-            "email": data.email
-        }
-    }
-
-@app.get("/api/users")
-def get_users():
-    return {
-        "users": [
-            {"id": 1, "name": "Demo User", "email": "demo@example.com"}
-        ]
     }
