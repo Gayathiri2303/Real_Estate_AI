@@ -1,195 +1,171 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import FileResponse
+from pydantic import BaseModel
+from typing import Optional
+import csv
 import os
+import random
 
-# ============ IMPORT ROUTERS ============
-from backend.api import login, property_images, vision, upload
-
-# ============ CREATE APP ============
 app = FastAPI(
-    title="🏠 USA Real Estate AI API",
-    description="AI-powered property valuation and market analytics",
+    title="Real Estate AI API",
+    description="Backend with 500 properties",
     version="2.0.0"
 )
 
-# ============ CORS CONFIGURATION ============
+# Allow frontend to connect
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "https://realestate.gayathiriportfolio.xyz",
-        "http://realestate.gayathiriportfolio.xyz",
-        "https://gayathiriportfolio.xyz",
-        "http://localhost:3000",
-        "http://localhost:3001",
-        "*"  # For testing - remove in production
-    ],
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-# ============ REGISTER ROUTERS ============
-app.include_router(login.router, prefix="/api")
-app.include_router(property_images.router, prefix="/api")
-app.include_router(vision.router, prefix="/api")
-app.include_router(upload.router, prefix="/api")
+# ====================== LOAD 500 PROPERTIES ======================
+PROPERTIES = []
 
-print("✅ All routers registered successfully!")
+def load_properties():
+    global PROPERTIES
+    csv_path = os.path.join(os.path.dirname(__file__), "properties_500.csv")
+    
+    if not os.path.exists(csv_path):
+        print("⚠️ CSV file not found. Using empty list.")
+        PROPERTIES = []
+        return
 
-# ============ SAMPLE PROPERTIES ============
-PROPERTIES = [
-    {
-        "id": 1,
-        "address": "123 Main Street",
-        "city": "New York",
-        "state": "NY",
-        "price": 750000,
-        "bedrooms": 3,
-        "bathrooms": 2,
-        "sqft": 1800,
-        "year_built": 2010,
-        "lat": 40.7128,
-        "lng": -74.0060,
-        "description": "Beautiful property in the heart of the city",
-        "floors": 2,
-        "sqft_lot": 2500,
-        "condition": "Excellent"
-    },
-    {
-        "id": 2,
-        "address": "456 Oak Avenue",
-        "city": "Los Angeles",
-        "state": "CA",
-        "price": 850000,
-        "bedrooms": 4,
-        "bathrooms": 3,
-        "sqft": 2200,
-        "year_built": 2015,
-        "lat": 34.0522,
-        "lng": -118.2437,
-        "description": "Spacious home with modern amenities",
-        "floors": 2,
-        "sqft_lot": 3000,
-        "condition": "Excellent"
-    },
-    {
-        "id": 3,
-        "address": "789 Pine Street",
-        "city": "New York",
-        "state": "NY",
-        "price": 650000,
-        "bedrooms": 3,
-        "bathrooms": 2,
-        "sqft": 1600,
-        "year_built": 2008,
-        "lat": 40.7580,
-        "lng": -73.9855,
-        "description": "Cozy apartment in a great neighborhood",
-        "floors": 1,
-        "sqft_lot": 1800,
-        "condition": "Good"
-    },
-    {
-        "id": 4,
-        "address": "321 Elm Street",
-        "city": "Chicago",
-        "state": "IL",
-        "price": 550000,
-        "bedrooms": 3,
-        "bathrooms": 2,
-        "sqft": 1500,
-        "year_built": 2005,
-        "lat": 41.8781,
-        "lng": -87.6298,
-        "description": "Charming home in a quiet neighborhood",
-        "floors": 1,
-        "sqft_lot": 2000,
-        "condition": "Good"
-    },
-    {
-        "id": 5,
-        "address": "654 Maple Drive",
-        "city": "Los Angeles",
-        "state": "CA",
-        "price": 950000,
-        "bedrooms": 4,
-        "bathrooms": 3,
-        "sqft": 2500,
-        "year_built": 2018,
-        "lat": 34.0522,
-        "lng": -118.2437,
-        "description": "Luxury home with stunning views",
-        "floors": 2,
-        "sqft_lot": 3500,
-        "condition": "Excellent"
-    }
-]
+    with open(csv_path, mode="r", encoding="utf-8") as file:
+        reader = csv.DictReader(file)
+        for row in reader:
+            PROPERTIES.append({
+                "id": int(row["id"]),
+                "address": row["address"],
+                "city": row["city"],
+                "state": row["state"],
+                "price": int(float(row["price"])),
+                "bedrooms": int(row["bedrooms"]),
+                "bathrooms": float(row["bathrooms"]),
+                "sqft": int(row["sqft"]),
+                "year_built": int(row["year_built"]),
+                "lat": float(row["lat"]),
+                "lng": float(row["lng"]),
+                "description": row["description"],
+                "condition": row["condition"]
+            })
+    print(f"✅ Loaded {len(PROPERTIES)} properties successfully!")
 
-# ============ ENDPOINTS ============
+# Load data when the app starts
+load_properties()
+
+# ====================== MODELS ======================
+class LoginRequest(BaseModel):
+    email: str
+    password: str
+
+class RegisterRequest(BaseModel):
+    name: str
+    email: str
+    password: str
+
+# ====================== ENDPOINTS ======================
 
 @app.get("/")
 def root():
-    """Root endpoint"""
     return {
-        "message": "🏠 USA Real Estate AI API is running!",
-        "endpoints": {
-            "properties": "/properties",
-            "property_images": "/api/property-images/{id}",
-            "login": "/api/login",
-            "test": "/api/test",
-            "health": "/api/health"
-        }
+        "message": "Real Estate AI API is running!",
+        "total_properties": len(PROPERTIES),
+        "status": "healthy"
     }
 
-@app.get("/properties")
-async def get_properties():
-    """Get all properties"""
+@app.get("/api/health")
+def health():
+    return {
+        "status": "healthy",
+        "total_properties": len(PROPERTIES)
+    }
+
+@app.get("/api/properties")
+def get_properties():
     return {"properties": PROPERTIES}
 
-@app.get("/properties/{property_id}")
-async def get_property(property_id: int):
-    """Get a single property by ID"""
+@app.get("/api/properties/{property_id}")
+def get_property(property_id: int):
     for prop in PROPERTIES:
         if prop["id"] == property_id:
             return prop
     raise HTTPException(status_code=404, detail="Property not found")
 
-@app.get("/api/test")
-def test():
-    """Test endpoint to check if API is working"""
-    return {
-        "status": "success",
-        "message": "API is working!",
-        "registered_routers": ["login", "property_images", "vision", "upload"]
-    }
-
-@app.get("/api/health")
-def health():
-    """Health check endpoint"""
-    return {
-        "status": "healthy",
-        "service": "FastAPI",
-        "version": "2.0.0"
-    }
-
-# ============ IMAGE SERVING ============
-@app.get("/uploads/{path:path}")
-async def serve_uploads(path: str):
-    """Serve uploaded images"""
-    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    file_path = os.path.join(BASE_DIR, "uploads", path)
+@app.get("/api/market/stats")
+def market_stats():
+    if not PROPERTIES:
+        return {"total_properties": 0, "average_price": 0}
     
-    if os.path.exists(file_path) and os.path.isfile(file_path):
-        return FileResponse(file_path)
-    raise HTTPException(status_code=404, detail="File not found")
+    prices = [p["price"] for p in PROPERTIES]
+    return {
+        "total_properties": len(PROPERTIES),
+        "average_price": int(sum(prices) / len(prices)),
+        "min_price": min(prices),
+        "max_price": max(prices)
+    }
 
-print("✅ FastAPI application loaded successfully!")
-print("📁 Available endpoints:")
-print("   - /")
-print("   - /properties")
-print("   - /properties/{id}")
-print("   - /api/login")
-print("   - /api/test")
-print("   - /api/health")
-print("   - /uploads/{path}")
+@app.get("/api/predict")
+def predict(
+    bedrooms: int = Query(3),
+    bathrooms: float = Query(2),
+    sqft: int = Query(1800),
+    year_built: int = Query(2010),
+    condition: str = Query("Good")
+):
+    base = 200000
+    price = base + (bedrooms * 45000) + (bathrooms * 25000) + (sqft * 180)
+    
+    age = 2025 - year_built
+    price -= age * 1500
+    
+    if condition.lower() == "excellent":
+        price *= 1.15
+    elif condition.lower() == "good":
+        price *= 1.05
+    elif condition.lower() == "fair":
+        price *= 0.95
+    else:
+        price *= 0.85
+
+    price = int(price * random.uniform(0.97, 1.03))
+
+    return {
+        "predicted_price": price,
+        "currency": "USD",
+        "confidence": "medium",
+        "message": "Prediction successful"
+    }
+
+@app.post("/api/login")
+def login(data: LoginRequest):
+    return {
+        "success": True,
+        "message": "Login successful",
+        "user": {
+            "email": data.email,
+            "name": data.email.split("@")[0]
+        },
+        "token": "demo-token-12345"
+    }
+
+@app.post("/api/register")
+def register(data: RegisterRequest):
+    return {
+        "success": True,
+        "message": "Registration successful",
+        "user": {
+            "name": data.name,
+            "email": data.email
+        }
+    }
+
+@app.get("/api/users")
+def get_users():
+    return {
+        "users": [
+            {"id": 1, "name": "Demo User", "email": "demo@example.com"}
+        ]
+    }
