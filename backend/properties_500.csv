@@ -1,0 +1,501 @@
+id,address,city,state,price,bedrooms,bathrooms,sqft,year_built,lat,lng,description,condition
+1,8294 Chestnut Drive,Detroit,MI,332551,4,2.5,2761,2000,42.3009,-83.1135,Classic style home with modern amenities,Excellent
+2,2274 Juniper Court,Atlanta,GA,675797,3,3,1805,2020,33.8252,-84.4097,Comfortable single-family residence,Good
+3,5999 Rose Boulevard,Portland,OR,892340,3,3.5,1347,2019,45.5755,-122.7571,Comfortable single-family residence,Good
+4,5231 Spruce Street,Sacramento,CA,650669,3,1.5,2131,1991,38.5139,-121.5334,Energy-efficient home with low utility costs,Good
+5,9138 Hemlock Court,Las Vegas,NV,703207,3,3.5,1967,1994,36.2174,-115.1157,Bright and airy home with lots of natural light,Good
+6,926 Birch Street,Milwaukee,WI,359424,4,2,2790,2019,43.0307,-87.9609,Modern home with open floor plan,Fair
+7,1925 Violet Road,Arlington,TX,477959,2,1.5,3104,1994,32.6665,-97.1479,Family-friendly neighborhood property,Good
+8,9802 Main Circle,Kansas City,MO,472084,3,1.5,2895,2018,39.0374,-94.6087,Modern home with open floor plan,Good
+9,9832 Cedar Circle,Kansas City,MO,504000.0,3,2.5,1720,2014,39.1464,-94.5144,Move-in ready home with recent upgrades,Excellent
+10,2946 Chestnut Lane,Omaha,NE,352674,3,2,2620,2005,41.2936,-96.0015,Energy-efficient home with low utility costs,Good
+11,4949 Birch Drive,Tampa,FL,616479,3,3,1822,2002,28.0091,-82.4821,Charming home with great curb appeal,Fair
+12,3567 Hemlock Place,Tampa,FL,697652,4,1.5,1268,1993,27.8751,-82.5252,Updated kitchen and bathrooms,Fair
+13,7500 Palm Street,Jacksonville,FL,624000.0,5,3.5,3021,1998,30.3734,-81.7194,Peaceful setting with mature trees,Fair
+14,2749 Walnut Drive,Memphis,TN,300334,2,2,1605,2013,35.1216,-89.9866,Classic style home with modern amenities,Good
+15,4799 Violet Boulevard,San Jose,CA,1810635,5,3.5,2891,1994,37.373,-121.8493,Charming home with great curb appeal,Excellent
+16,9899 Cedar Court,Milwaukee,WI,472924,4,2,1382,2006,43.0285,-87.92,Comfortable single-family residence,Good
+17,2422 Ivy Lane,El Paso,TX,456000.0,5,2,1685,1993,31.7263,-106.5275,Comfortable single-family residence,Fair
+18,2960 Alder Circle,Denver,CO,1080000.0,5,1.5,2937,2023,39.7578,-105.0219,Beautiful family home in a quiet neighborhood,Fair
+19,5693 Fir Place,Dallas,TX,624391,3,2,1542,2012,32.7835,-96.7626,Energy-efficient home with low utility costs,Good
+20,7308 Willow Court,Chicago,IL,889358,3,1.5,2974,2007,41.8227,-87.6137,Peaceful setting with mature trees,Good
+21,1356 Hickory Road,Austin,TX,701196,3,3,2104,2012,30.237,-97.8183,Comfortable single-family residence,Good
+22,3114 Rose Street,Detroit,MI,389366,3,2,3125,2022,42.3688,-83.1187,Comfortable single-family residence,Excellent
+23,6989 Magnolia Drive,Oklahoma City,OK,300600,2,2,1264,1996,35.4053,-97.4712,Spacious property with large backyard,Fair
+24,6719 Rose Circle,Omaha,NE,364190,5,3.5,2123,2010,41.2698,-95.8635,Ideal starter home or investment property,Good
+25,5301 Holly Circle,Tucson,AZ,576000.0,2,2,2377,2002,32.2586,-111.0034,Move-in ready home with recent upgrades,Good
+26,3896 Orchid Court,Omaha,NE,389368,3,3.5,2538,2002,41.3293,-95.8999,Well-maintained home close to schools,Good
+27,6441 Dogwood Lane,Memphis,TN,341834,2,2,2022,2006,35.1749,-90.0679,Family-friendly neighborhood property,Good
+28,9361 Sycamore Lane,Arlington,TX,474774,5,3.5,3046,2009,32.6981,-97.1509,Bright and airy home with lots of natural light,Good
+29,7365 Willow Road,Arlington,TX,495849,4,3,1331,1989,32.6933,-97.0352,Peaceful setting with mature trees,Fair
+30,907 Fir Place,San Francisco,CA,2227928,3,3,1991,2003,37.7679,-122.4938,Peaceful setting with mature trees,Good
+31,2810 Maple Lane,Philadelphia,PA,734577,3,2,1751,2015,39.9542,-75.1182,Energy-efficient home with low utility costs,Good
+32,9340 Cypress Lane,New Orleans,LA,660000.0,5,2,2446,1998,29.9778,-90.0063,Charming home with great curb appeal,Good
+33,3407 Tulip Lane,Raleigh,NC,723723,4,1.5,2016,2004,35.7033,-78.6889,Convenient location near shopping and parks,Good
+34,6522 Cypress Boulevard,Houston,TX,514781,3,3,2890,2005,29.6908,-95.3709,Energy-efficient home with low utility costs,Good
+35,6380 Hemlock Boulevard,San Diego,CA,901792,3,2.5,1245,2008,32.7925,-117.14,Ideal starter home or investment property,Good
+36,3657 Laurel Lane,Denver,CO,1080000.0,5,3.5,2788,1991,39.6812,-105.0691,Convenient location near shopping and parks,Fair
+37,9527 Juniper Street,Phoenix,AZ,668707,2,2,2265,2019,33.4923,-112.1025,Bright and airy home with lots of natural light,Good
+38,8016 Hemlock Road,San Jose,CA,1401468,4,3,1397,2014,37.3354,-121.9221,Charming home with great curb appeal,Excellent
+39,3180 Olive Way,Fort Worth,TX,625486,4,2.5,1345,2023,32.8037,-97.3161,Classic style home with modern amenities,Excellent
+40,3277 Sunflower Lane,Phoenix,AZ,503474,5,3.5,2345,2009,33.3738,-112.1117,Spacious property with large backyard,Fair
+41,466 Laurel Street,Las Vegas,NV,743881,3,3.5,1237,2014,36.2263,-115.15,Family-friendly neighborhood property,Excellent
+42,2496 Laurel Street,Wichita,KS,325141,2,2,1859,2018,37.6158,-97.3461,Spacious property with large backyard,Good
+43,6697 Olive Way,Oakland,CA,1064917,2,2,1136,2013,37.7608,-122.3131,Energy-efficient home with low utility costs,Fair
+44,1130 Alder Lane,Oklahoma City,OK,300840,2,3,1957,1988,35.5176,-97.5445,Convenient location near shopping and parks,Excellent
+45,3004 Hickory Way,New York,NY,961291,4,1.5,1909,1999,40.7281,-73.9727,Convenient location near shopping and parks,Good
+46,971 Beech Street,Albuquerque,NM,439723,4,1.5,2255,1989,35.1507,-106.6093,Beautiful family home in a quiet neighborhood,Good
+47,3563 Walnut Circle,New York,NY,1337953,5,1.5,1729,2013,40.7519,-74.0737,Family-friendly neighborhood property,Good
+48,741 Daisy Street,New York,NY,844006,3,1.5,1608,2002,40.738,-73.9329,Family-friendly neighborhood property,Good
+49,6100 Oak Lane,Austin,TX,1020000.0,2,1.5,2230,1988,30.2227,-97.6842,Spacious property with large backyard,Good
+50,8638 Oak Lane,Austin,TX,807489,2,3.5,3044,1994,30.2409,-97.7371,Spacious property with large backyard,Good
+51,3125 Violet Road,Raleigh,NC,831081,3,2.5,2300,2002,35.8514,-78.686,Spacious property with large backyard,Good
+52,8663 Oak Avenue,Oklahoma City,OK,480000.0,2,2,2750,1990,35.4808,-97.4589,Spacious property with large backyard,Fair
+53,8626 Chestnut Drive,Tampa,FL,744000.0,3,3.5,1997,2019,27.9457,-82.5082,Ideal starter home or investment property,Excellent
+54,6590 Daisy Boulevard,Los Angeles,CA,1273093,3,3,2202,2012,34.0301,-118.2795,Energy-efficient home with low utility costs,Excellent
+55,8788 Poplar Court,Dallas,TX,567935,4,1.5,2603,2000,32.7895,-96.7315,Energy-efficient home with low utility costs,Fair
+56,4682 Daisy Way,Columbus,OH,576000.0,3,2.5,3186,1989,40.0356,-83.0482,Convenient location near shopping and parks,Excellent
+57,9188 Cedar Drive,Portland,OR,671045,3,2,1872,2015,45.464,-122.6309,Peaceful setting with mature trees,Good
+58,9332 Alder Place,Sacramento,CA,900000.0,4,2,2548,2013,38.6304,-121.4154,Comfortable single-family residence,Fair
+59,460 Oak Boulevard,San Jose,CA,1703215,3,2,2295,1998,37.3153,-121.8363,Energy-efficient home with low utility costs,Good
+60,178 Holly Circle,Denver,CO,599437,2,2,1693,2011,39.6675,-104.9405,Move-in ready home with recent upgrades,Good
+61,6716 Sunflower Road,Chicago,IL,629023,3,3.5,3154,1998,41.9042,-87.6294,Comfortable single-family residence,Good
+62,2914 Rose Drive,Phoenix,AZ,560341,4,3,1888,2022,33.3733,-112.0323,Well-maintained home close to schools,Good
+63,2735 Willow Boulevard,Tucson,AZ,434843,5,3.5,2744,1990,32.2695,-110.9827,Updated kitchen and bathrooms,Fair
+64,6779 Palm Avenue,Las Vegas,NV,648488,4,3,1672,2020,36.1328,-115.0991,Classic style home with modern amenities,Fair
+65,8840 Magnolia Street,Tucson,AZ,563276,3,3,2780,1999,32.3018,-111.0496,Classic style home with modern amenities,Good
+66,6145 Daisy Road,Austin,TX,1020000.0,3,2.5,2615,1993,30.2668,-97.6942,Charming home with great curb appeal,Good
+67,6475 Ash Lane,Phoenix,AZ,600514,3,2,2068,2010,33.4176,-112.1196,Family-friendly neighborhood property,Good
+68,3350 Elm Drive,San Jose,CA,1556972,3,3,2159,2017,37.2647,-121.915,Comfortable single-family residence,Good
+69,8693 Walnut Way,San Antonio,TX,576000.0,4,3,2704,1991,29.3679,-98.51,Modern home with open floor plan,Good
+70,6849 Magnolia Circle,Tampa,FL,526607,3,3,1816,2019,27.9184,-82.4159,Peaceful setting with mature trees,Good
+71,8945 Pine Avenue,Raleigh,NC,581780,2,3,1760,1995,35.7294,-78.6187,Updated kitchen and bathrooms,Good
+72,3816 Alder Way,Los Angeles,CA,1477567,3,2,3136,2008,34.0054,-118.3007,Updated kitchen and bathrooms,Good
+73,2913 Main Street,San Jose,CA,1920000.0,3,3.5,3159,2012,37.3407,-121.8759,Peaceful setting with mature trees,Good
+74,5613 Cypress Drive,Albuquerque,NM,315638,2,2,1445,1988,35.0515,-106.6767,Classic style home with modern amenities,Good
+75,7502 Daisy Street,Tucson,AZ,492706,5,3.5,2473,1997,32.2106,-111.0282,Spacious property with large backyard,Good
+76,6274 Ash Street,Denver,CO,975174,3,2,1188,2010,39.6606,-104.946,Move-in ready home with recent upgrades,Fair
+77,863 Tulip Avenue,El Paso,TX,335691,3,3.5,1735,1998,31.7617,-106.4667,Spacious property with large backyard,Excellent
+78,483 Ash Circle,New York,NY,1392771,3,1.5,1850,1991,40.6362,-73.9933,Modern home with open floor plan,Good
+79,8101 Pine Drive,Memphis,TN,386317,3,3,2601,1992,35.1963,-90.1183,Convenient location near shopping and parks,Good
+80,691 Sycamore Street,San Diego,CA,1289419,3,2,2500,2000,32.7815,-117.134,Comfortable single-family residence,Fair
+81,6086 Hemlock Circle,Boston,MA,1560000.0,3,2,1734,1986,42.357,-70.9881,Energy-efficient home with low utility costs,Good
+82,4892 Maple Lane,Las Vegas,NV,580619,3,2,2633,2009,36.2229,-115.1696,Spacious property with large backyard,Excellent
+83,3583 Juniper Place,Atlanta,GA,652712,3,2,1418,2009,33.6775,-84.4446,Charming home with great curb appeal,Good
+84,9894 Holly Avenue,Charlotte,NC,378469,2,2.5,1310,2004,35.298,-80.7862,Classic style home with modern amenities,Excellent
+85,7482 Oak Lane,Tucson,AZ,484710,3,3,2279,2012,32.1441,-111.0458,Charming home with great curb appeal,Good
+86,9743 Oak Street,San Francisco,CA,2026563,5,2.5,2963,2023,37.7258,-122.4795,Updated kitchen and bathrooms,Fair
+87,5401 Violet Circle,Miami,FL,611416,2,3,1659,2010,25.6899,-80.1436,Classic style home with modern amenities,Good
+88,1317 Rose Lane,Louisville,KY,324909,4,2.5,2117,2018,38.1796,-85.7462,Classic style home with modern amenities,Good
+89,2220 Juniper Street,Sacramento,CA,674667,3,2,2471,1993,38.613,-121.4394,Move-in ready home with recent upgrades,Good
+90,6297 Daisy Boulevard,Jacksonville,FL,422205,3,2,2052,1989,30.3462,-81.7307,Modern home with open floor plan,Good
+91,5326 Spruce Avenue,Boston,MA,1159163,4,2,2342,2014,42.3576,-71.049,Charming home with great curb appeal,Good
+92,7695 Juniper Circle,San Antonio,TX,576000.0,3,3.5,2858,1990,29.4702,-98.5389,Bright and airy home with lots of natural light,Good
+93,8287 Ivy Drive,Las Vegas,NV,840000.0,4,3.5,2802,1987,36.2442,-115.0772,Comfortable single-family residence,Good
+94,6777 Spruce Street,Oakland,CA,978103,4,3.5,1355,2011,37.7629,-122.2148,Charming home with great curb appeal,Excellent
+95,8995 Chestnut Drive,Long Beach,CA,1266101,4,3.5,2015,1996,33.7632,-118.1916,Peaceful setting with mature trees,Good
+96,5581 Oak Street,New Orleans,LA,579666,3,2,1277,2016,29.9479,-90.0061,Updated kitchen and bathrooms,Fair
+97,7558 Palm Place,Mesa,AZ,557980,4,2,2187,2013,33.4798,-111.9097,Beautiful family home in a quiet neighborhood,Good
+98,7674 Birch Avenue,Albuquerque,NM,478831,3,3,1704,2006,35.0304,-106.582,Updated kitchen and bathrooms,Good
+99,5383 Hickory Court,Philadelphia,PA,780000.0,4,3.5,1686,1998,39.9169,-75.1903,Spacious property with large backyard,Good
+100,2588 Daisy Circle,Jacksonville,FL,608286,3,2.5,2103,2021,30.3416,-81.7239,Updated kitchen and bathrooms,Good
+101,1928 Rose Road,San Diego,CA,1251692,4,2,2830,1991,32.7415,-117.1976,Classic style home with modern amenities,Fair
+102,5687 Birch Circle,Milwaukee,WI,540000.0,5,2,3131,2002,43.0692,-87.8599,Energy-efficient home with low utility costs,Fair
+103,3778 Poplar Court,Memphis,TN,456000.0,4,1.5,3052,1990,35.1098,-90.0558,Updated kitchen and bathrooms,Fair
+104,5309 Maple Drive,Sacramento,CA,620030,4,2.5,1198,2000,38.6283,-121.548,Peaceful setting with mature trees,Fair
+105,6469 Laurel Circle,Las Vegas,NV,668766,4,2,2051,2003,36.0973,-115.1534,Ideal starter home or investment property,Good
+106,3090 Cedar Road,Mesa,AZ,660000.0,4,2,2284,1989,33.4695,-111.813,Move-in ready home with recent upgrades,Fair
+107,6228 Beech Drive,San Francisco,CA,2309583,2,3.5,2422,2016,37.7,-122.3694,Convenient location near shopping and parks,Good
+108,2463 Cedar Lane,Columbus,OH,576000.0,4,2,2694,2009,40.0045,-82.9412,Updated kitchen and bathrooms,Good
+109,566 Laurel Way,Columbus,OH,470446,3,1.5,1693,1999,40.0148,-83.0529,Well-maintained home close to schools,Good
+110,1960 Maple Boulevard,Milwaukee,WI,368122,4,3.5,2979,2013,42.9923,-87.8765,Updated kitchen and bathrooms,Good
+111,1250 Rose Drive,Sacramento,CA,900000.0,4,1.5,2600,2016,38.5749,-121.4744,Convenient location near shopping and parks,Fair
+112,4183 Laurel Avenue,Long Beach,CA,1320000.0,3,2.5,2601,1989,33.7136,-118.2211,Charming home with great curb appeal,Fair
+113,3910 Spruce Drive,Indianapolis,IN,316049,4,2,1274,1995,39.7562,-86.1987,Classic style home with modern amenities,Good
+114,5363 Lily Drive,Milwaukee,WI,291692,3,2,1840,2020,42.9703,-87.9829,Updated kitchen and bathrooms,Good
+115,1431 Holly Court,Denver,CO,819704,3,2,1758,1991,39.683,-104.9518,Bright and airy home with lots of natural light,Fair
+116,4233 Poplar Place,Chicago,IL,699630,3,3.5,2594,1995,41.8206,-87.6002,Beautiful family home in a quiet neighborhood,Fair
+117,3231 Birch Road,New Orleans,LA,536030,4,1.5,1628,2000,29.9893,-90.0413,Modern home with open floor plan,Fair
+118,2204 Daisy Circle,Tampa,FL,477450,4,2,1818,1986,27.9383,-82.4616,Bright and airy home with lots of natural light,Good
+119,1552 Sunflower Avenue,Denver,CO,613958,4,1.5,1516,1991,39.8033,-104.9989,Well-maintained home close to schools,Good
+120,5877 Alder Place,Jacksonville,FL,364427,2,3,1795,2016,30.2912,-81.6808,Updated kitchen and bathrooms,Excellent
+121,5431 Violet Road,Austin,TX,708198,3,2,1774,2000,30.3142,-97.6799,Convenient location near shopping and parks,Excellent
+122,8293 Palm Road,Milwaukee,WI,345545,3,2,2666,2000,43.1112,-87.8834,Charming home with great curb appeal,Fair
+123,6021 Hemlock Way,Los Angeles,CA,1680000.0,3,2,3156,2006,34.0691,-118.3235,Energy-efficient home with low utility costs,Good
+124,4212 Olive Street,Fort Worth,TX,534468,4,2.5,1250,2012,32.7996,-97.3577,Peaceful setting with mature trees,Good
+125,9285 Alder Street,Fresno,CA,696000.0,4,2,3090,2005,36.7246,-119.7376,Well-maintained home close to schools,Excellent
+126,1708 Lily Street,Portland,OR,663079,4,2.5,1471,1998,45.4532,-122.6169,Energy-efficient home with low utility costs,Good
+127,9925 Chestnut Way,Denver,CO,1080000.0,3,1.5,2140,2005,39.695,-105.017,Modern home with open floor plan,Good
+128,2298 Walnut Lane,Mesa,AZ,648450,5,2,2823,2010,33.4658,-111.8371,Move-in ready home with recent upgrades,Good
+129,2169 Rose Way,San Antonio,TX,495933,3,3,1107,2021,29.3587,-98.4328,Move-in ready home with recent upgrades,Fair
+130,3084 Cypress Court,Fort Worth,TX,573663,3,2,2230,2007,32.7705,-97.2665,Move-in ready home with recent upgrades,Fair
+131,9912 Daisy Street,New York,NY,1037932,2,2,1715,1995,40.756,-73.9625,Ideal starter home or investment property,Good
+132,7460 Chestnut Lane,Memphis,TN,373613,3,2,2046,2008,35.1746,-90.0515,Peaceful setting with mature trees,Good
+133,3538 Maple Way,El Paso,TX,330895,3,1.5,1801,2015,31.7875,-106.5178,Well-maintained home close to schools,Good
+134,6744 Cypress Drive,Fort Worth,TX,660000.0,3,2,2685,1996,32.7019,-97.3874,Comfortable single-family residence,Good
+135,8622 Juniper Boulevard,Long Beach,CA,1186861,3,2.5,1577,2015,33.7711,-118.1274,Modern home with open floor plan,Fair
+136,6190 Oak Boulevard,Seattle,WA,1440000.0,4,1.5,3100,1998,47.6373,-122.2676,Family-friendly neighborhood property,Good
+137,8727 Tulip Drive,Nashville,TN,798761,5,2,1184,2012,36.2171,-86.7418,Bright and airy home with lots of natural light,Good
+138,6830 Daisy Drive,Tucson,AZ,455594,4,3,2447,1995,32.1853,-111.0488,Comfortable single-family residence,Fair
+139,8544 Tulip Place,Jacksonville,FL,624000.0,4,3,2640,1993,30.4115,-81.7115,Peaceful setting with mature trees,Good
+140,7729 Hemlock Boulevard,San Jose,CA,1701093,4,2,1124,1999,37.3249,-121.9539,Well-maintained home close to schools,Excellent
+141,637 Poplar Avenue,Minneapolis,MN,744000.0,4,2.5,2723,1999,44.942,-93.2312,Peaceful setting with mature trees,Excellent
+142,5976 Sycamore Street,New Orleans,LA,416103,3,3,1367,2004,29.9303,-90.0419,Energy-efficient home with low utility costs,Good
+143,903 Spruce Avenue,San Francisco,CA,2242698,4,3,1590,1996,37.7627,-122.4729,Energy-efficient home with low utility costs,Fair
+144,8610 Daisy Street,Albuquerque,NM,576000.0,3,3.5,3042,1992,35.1408,-106.7,Energy-efficient home with low utility costs,Good
+145,6474 Fir Place,Fresno,CA,696000.0,4,1.5,2806,2013,36.6604,-119.7507,Ideal starter home or investment property,Good
+146,7292 Hickory Street,Boston,MA,1360888,2,2,1247,2008,42.3268,-70.98,Beautiful family home in a quiet neighborhood,Good
+147,4559 Fir Boulevard,San Antonio,TX,563221,3,3,2031,2014,29.3708,-98.5275,Comfortable single-family residence,Good
+148,8237 Spruce Way,Washington,DC,1283211,4,2,1707,1996,38.9819,-76.9996,Well-maintained home close to schools,Good
+149,3424 Chestnut Way,Oklahoma City,OK,345304,4,2,1548,2006,35.48,-97.5261,Peaceful setting with mature trees,Fair
+150,461 Fir Drive,Long Beach,CA,1126341,3,2.5,1156,1989,33.7491,-118.1718,Bright and airy home with lots of natural light,Good
+151,1838 Rose Avenue,Albuquerque,NM,401159,4,1.5,2834,2018,35.096,-106.611,Ideal starter home or investment property,Excellent
+152,4770 Dogwood Drive,Miami,FL,624383,4,2.5,1580,1997,25.6948,-80.1935,Modern home with open floor plan,Good
+153,4970 Olive Way,Sacramento,CA,900000.0,4,2,1594,2008,38.5961,-121.5406,Spacious property with large backyard,Good
+154,7416 Birch Drive,Philadelphia,PA,485481,2,2,1302,1992,40.0322,-75.1383,Energy-efficient home with low utility costs,Excellent
+155,3276 Poplar Way,Raleigh,NC,756194,3,3,2547,2023,35.7378,-78.7025,Charming home with great curb appeal,Good
+156,8367 Sycamore Lane,Kansas City,MO,504000.0,2,2.5,2059,2016,39.1112,-94.6465,Charming home with great curb appeal,Excellent
+157,3923 Chestnut Road,Oklahoma City,OK,432913,4,2,2655,2004,35.4571,-97.5482,Spacious property with large backyard,Excellent
+158,7370 Hickory Place,Indianapolis,IN,473439,4,3.5,1594,1992,39.8418,-86.2009,Ideal starter home or investment property,Good
+159,2098 Juniper Circle,Baltimore,MD,567106,4,3,2537,1998,39.2509,-76.6383,Classic style home with modern amenities,Good
+160,2874 Walnut Lane,Las Vegas,NV,628013,4,3,1842,1987,36.1017,-115.1891,Classic style home with modern amenities,Good
+161,3406 Lily Drive,Seattle,WA,1440000.0,5,2.5,2744,2018,47.5874,-122.3508,Family-friendly neighborhood property,Good
+162,8355 Juniper Place,Washington,DC,1051337,3,2,2772,2010,38.9563,-77.024,Modern home with open floor plan,Good
+163,5255 Cedar Lane,Raleigh,NC,800255,5,2.5,1962,2001,35.7458,-78.6203,Classic style home with modern amenities,Fair
+164,7548 Ivy Way,Omaha,NE,504000.0,5,3.5,3114,1993,41.2822,-95.8665,Well-maintained home close to schools,Good
+165,1269 Alder Drive,Philadelphia,PA,388098,4,1.5,1519,1987,39.969,-75.0884,Modern home with open floor plan,Fair
+166,6091 Cedar Avenue,San Jose,CA,1920000.0,4,3.5,2945,1994,37.3401,-121.8965,Peaceful setting with mature trees,Good
+167,7277 Main Place,Albuquerque,NM,550492,4,1.5,3080,2000,35.0879,-106.7053,Beautiful family home in a quiet neighborhood,Excellent
+168,5722 Cedar Lane,Tampa,FL,613477,5,2,1168,2014,28.0225,-82.4425,Move-in ready home with recent upgrades,Excellent
+169,4471 Magnolia Road,Nashville,TN,900000.0,4,3,2856,1998,36.1445,-86.7036,Updated kitchen and bathrooms,Excellent
+170,1497 Cedar Drive,San Jose,CA,1312212,2,2.5,1781,1996,37.4176,-121.8646,Beautiful family home in a quiet neighborhood,Good
+171,9444 Chestnut Boulevard,Detroit,MI,389202,3,1.5,1172,2001,42.3239,-83.0744,Classic style home with modern amenities,Excellent
+172,4856 Cypress Circle,Houston,TX,445251,3,2,2797,1990,29.818,-95.3308,Comfortable single-family residence,Fair
+173,3697 Juniper Drive,Phoenix,AZ,720000.0,5,3.5,3006,2006,33.5171,-112.1184,Ideal starter home or investment property,Fair
+174,3936 Cypress Avenue,Charlotte,NC,504326,4,2,2114,2005,35.2738,-80.8155,Ideal starter home or investment property,Fair
+175,6236 Holly Street,Albuquerque,NM,576000.0,5,2.5,3078,1993,35.1481,-106.7181,Comfortable single-family residence,Excellent
+176,9627 Spruce Drive,Mesa,AZ,502320,3,2,2824,2023,33.446,-111.7826,Well-maintained home close to schools,Good
+177,2232 Elm Road,Albuquerque,NM,574395,4,2,1546,1992,35.1311,-106.5732,Classic style home with modern amenities,Good
+178,6129 Tulip Road,Fresno,CA,440651,4,3.5,1123,1996,36.7763,-119.783,Updated kitchen and bathrooms,Good
+179,8449 Juniper Boulevard,Raleigh,NC,762999,3,2,1290,1992,35.7613,-78.5926,Move-in ready home with recent upgrades,Good
+180,1369 Poplar Avenue,Memphis,TN,328325,4,3,2191,2014,35.1518,-90.014,Ideal starter home or investment property,Good
+181,5455 Sunflower Circle,Louisville,KY,504000.0,2,3.5,2622,2016,38.328,-85.8171,Beautiful family home in a quiet neighborhood,Excellent
+182,2917 Cedar Lane,Fort Worth,TX,588479,4,1.5,2614,2009,32.8276,-97.29,Ideal starter home or investment property,Excellent
+183,6049 Willow Road,New Orleans,LA,526011,4,2,1325,1985,29.879,-90.0627,Peaceful setting with mature trees,Good
+184,6966 Main Circle,Portland,OR,1080000.0,3,2,2839,2017,45.5037,-122.6651,Well-maintained home close to schools,Excellent
+185,9046 Sycamore Street,Phoenix,AZ,539563,4,1.5,2711,1993,33.4107,-112.0815,Bright and airy home with lots of natural light,Fair
+186,9453 Cypress Avenue,Portland,OR,1080000.0,4,2,3032,2000,45.5579,-122.7536,Well-maintained home close to schools,Good
+187,8983 Birch Way,San Diego,CA,1560000.0,3,3,3011,2016,32.6738,-117.1619,Well-maintained home close to schools,Fair
+188,7047 Rose Way,Denver,CO,1080000.0,5,3,1672,1989,39.7688,-104.9436,Comfortable single-family residence,Fair
+189,9151 Elm Street,El Paso,TX,456000.0,5,1.5,2862,1988,31.7426,-106.5474,Bright and airy home with lots of natural light,Good
+190,2394 Ash Drive,San Jose,CA,1920000.0,2,1.5,1994,1999,37.3742,-121.8497,Charming home with great curb appeal,Good
+191,5493 Dogwood Road,Jacksonville,FL,523995,4,3.5,2582,1985,30.4036,-81.6028,Ideal starter home or investment property,Fair
+192,2349 Cypress Circle,Virginia Beach,VA,612506,4,1.5,1789,2018,36.9247,-76.0481,Comfortable single-family residence,Fair
+193,7318 Fir Way,El Paso,TX,243845,3,3,1400,1992,31.6964,-106.4129,Peaceful setting with mature trees,Good
+194,8368 Sycamore Place,Phoenix,AZ,553233,3,1.5,1502,2001,33.3815,-112.0394,Energy-efficient home with low utility costs,Good
+195,4023 Cypress Way,Oklahoma City,OK,480000.0,4,2,2724,2010,35.533,-97.5727,Well-maintained home close to schools,Good
+196,6536 Main Place,Louisville,KY,504000.0,2,2,1949,2006,38.1822,-85.7576,Peaceful setting with mature trees,Good
+197,5449 Juniper Boulevard,Tucson,AZ,516271,3,2.5,1466,2013,32.2923,-111.0268,Modern home with open floor plan,Fair
+198,4790 Dogwood Lane,San Antonio,TX,576000.0,5,3.5,3133,2010,29.4638,-98.4483,Well-maintained home close to schools,Good
+199,2826 Olive Circle,Tucson,AZ,576000.0,4,1.5,2743,1991,32.2617,-110.9015,Charming home with great curb appeal,Good
+200,6408 Elm Street,Atlanta,GA,747771,3,1.5,3101,2002,33.7312,-84.369,Modern home with open floor plan,Excellent
+201,2021 Pine Place,Detroit,MI,381651,5,2,3191,1985,42.3185,-82.9816,Convenient location near shopping and parks,Fair
+202,3503 Main Court,Sacramento,CA,858749,3,1.5,1380,2001,38.626,-121.5734,Ideal starter home or investment property,Excellent
+203,7451 Alder Circle,Oklahoma City,OK,480000.0,4,1.5,2444,2007,35.5109,-97.5,Spacious property with large backyard,Good
+204,4268 Laurel Street,Boston,MA,1560000.0,2,2,2566,1991,42.4038,-71.13,Bright and airy home with lots of natural light,Good
+205,256 Orchid Court,Nashville,TN,854346,2,2,2524,1989,36.1105,-86.7618,Move-in ready home with recent upgrades,Good
+206,9368 Juniper Place,Arlington,TX,624000.0,4,2.5,2656,1998,32.8154,-97.1787,Beautiful family home in a quiet neighborhood,Fair
+207,9294 Cypress Way,Oklahoma City,OK,395973,2,3.5,2078,2008,35.4052,-97.4758,Classic style home with modern amenities,Fair
+208,6987 Hemlock Way,Raleigh,NC,630645,3,2,1940,1987,35.8421,-78.6467,Well-maintained home close to schools,Good
+209,8296 Poplar Boulevard,Los Angeles,CA,1680000.0,4,3,2957,1994,33.9999,-118.2471,Updated kitchen and bathrooms,Good
+210,7991 Sunflower Court,Jacksonville,FL,624000.0,2,3,2785,1999,30.4086,-81.6081,Well-maintained home close to schools,Good
+211,7343 Willow Lane,Columbus,OH,412911,3,2,1739,2007,39.9003,-83.0594,Peaceful setting with mature trees,Fair
+212,5461 Laurel Avenue,Jacksonville,FL,624000.0,3,3.5,2643,2004,30.3695,-81.7062,Move-in ready home with recent upgrades,Good
+213,4176 Palm Road,Houston,TX,660000.0,4,1.5,2360,2001,29.8098,-95.3664,Classic style home with modern amenities,Good
+214,6516 Dogwood Boulevard,Washington,DC,963204,3,2,2324,2014,38.8416,-77.016,Beautiful family home in a quiet neighborhood,Excellent
+215,731 Pine Road,Las Vegas,NV,686913,5,2,1264,1987,36.1726,-115.0831,Beautiful family home in a quiet neighborhood,Good
+216,5947 Main Way,Houston,TX,614735,3,3,1968,2023,29.7977,-95.3147,Beautiful family home in a quiet neighborhood,Good
+217,9592 Dogwood Way,Philadelphia,PA,494177,3,1.5,2009,1986,39.8857,-75.2088,Bright and airy home with lots of natural light,Good
+218,7276 Olive Way,Kansas City,MO,490475,3,1.5,2058,1996,39.0917,-94.5776,Energy-efficient home with low utility costs,Excellent
+219,9745 Olive Drive,New York,NY,1440000.0,3,3.5,2628,2021,40.7084,-73.9505,Beautiful family home in a quiet neighborhood,Good
+220,8248 Orchid Drive,Memphis,TN,344401,5,2,2511,2017,35.2025,-89.9951,Beautiful family home in a quiet neighborhood,Good
+221,761 Pine Avenue,Philadelphia,PA,780000.0,3,3.5,2759,1988,39.8977,-75.2368,Spacious property with large backyard,Good
+222,8919 Pine Avenue,Houston,TX,605565,3,3.5,1258,2005,29.7585,-95.4407,Move-in ready home with recent upgrades,Good
+223,7524 Maple Drive,Tampa,FL,616068,3,2.5,1270,1993,27.9918,-82.5103,Comfortable single-family residence,Good
+224,5659 Sunflower Place,San Jose,CA,1920000.0,5,3,2755,2002,37.3945,-121.9224,Ideal starter home or investment property,Good
+225,1824 Beech Street,Chicago,IL,546563,3,3.5,1526,2000,41.8287,-87.653,Charming home with great curb appeal,Fair
+226,4080 Sycamore Way,Oakland,CA,1133774,3,1.5,2271,1988,37.821,-122.3279,Charming home with great curb appeal,Fair
+227,7550 Palm Place,El Paso,TX,409394,3,3.5,2543,2002,31.8141,-106.4323,Peaceful setting with mature trees,Fair
+228,3599 Magnolia Way,Indianapolis,IN,382609,2,2,1147,2001,39.8191,-86.2158,Comfortable single-family residence,Fair
+229,2403 Chestnut Street,Detroit,MI,234518,4,3,1465,1988,42.2804,-82.9774,Ideal starter home or investment property,Excellent
+230,6936 Palm Way,Fort Worth,TX,489282,3,2.5,2485,1997,32.6794,-97.2822,Beautiful family home in a quiet neighborhood,Good
+231,5556 Dogwood Avenue,Fort Worth,TX,380474,3,1.5,1511,1997,32.7379,-97.3307,Energy-efficient home with low utility costs,Good
+232,3933 Juniper Boulevard,Memphis,TN,329407,3,2.5,1247,2004,35.2287,-90.0997,Ideal starter home or investment property,Good
+233,9470 Tulip Drive,Long Beach,CA,1320000.0,3,2,1640,1997,33.7493,-118.192,Beautiful family home in a quiet neighborhood,Good
+234,7349 Hemlock Circle,Phoenix,AZ,639737,3,2,1268,2002,33.4812,-112.0363,Convenient location near shopping and parks,Good
+235,8099 Elm Court,Mesa,AZ,571644,3,2,1219,2003,33.4327,-111.7874,Well-maintained home close to schools,Good
+236,2854 Violet Place,Arlington,TX,381206,3,2,1534,1998,32.7475,-97.0926,Comfortable single-family residence,Good
+237,4730 Beech Way,Austin,TX,849951,2,3.5,1446,1994,30.2816,-97.8029,Comfortable single-family residence,Good
+238,7385 Alder Boulevard,Memphis,TN,314028,3,2.5,3063,2016,35.1453,-90.0807,Convenient location near shopping and parks,Good
+239,6258 Poplar Court,Denver,CO,740582,5,3,1854,2009,39.7828,-105.0295,Charming home with great curb appeal,Fair
+240,7699 Daisy Lane,Memphis,TN,456000.0,5,3.5,2851,1985,35.1078,-90.1228,Convenient location near shopping and parks,Fair
+241,3907 Sunflower Drive,Dallas,TX,767492,4,3,1476,2022,32.8294,-96.7517,Modern home with open floor plan,Fair
+242,3357 Spruce Boulevard,El Paso,TX,428063,4,2,2816,2000,31.7929,-106.4075,Classic style home with modern amenities,Good
+243,5139 Sycamore Way,Houston,TX,413114,3,1.5,1587,2004,29.8369,-95.371,Beautiful family home in a quiet neighborhood,Good
+244,7073 Cedar Place,Virginia Beach,VA,638996,5,2,1396,2009,36.8386,-75.9521,Bright and airy home with lots of natural light,Good
+245,7854 Ash Road,Columbus,OH,305962,2,2,1168,2004,40.013,-83.0368,Charming home with great curb appeal,Good
+246,669 Alder Circle,Seattle,WA,1299841,3,1.5,1602,2011,47.6672,-122.2682,Comfortable single-family residence,Excellent
+247,6791 Sunflower Avenue,Baltimore,MD,600000.0,3,2,2250,2022,39.3054,-76.6532,Energy-efficient home with low utility costs,Good
+248,909 Rose Court,Mesa,AZ,634338,4,3.5,2004,2009,33.3844,-111.7874,Convenient location near shopping and parks,Good
+249,3115 Hemlock Road,Memphis,TN,309679,4,2,2905,1992,35.2008,-89.9753,Move-in ready home with recent upgrades,Excellent
+250,4861 Spruce Drive,Tulsa,OK,456000.0,4,1.5,1581,1991,36.075,-95.9508,Comfortable single-family residence,Good
+251,5290 Magnolia Street,Virginia Beach,VA,720000.0,4,3.5,3072,2011,36.8953,-75.9033,Modern home with open floor plan,Good
+252,5096 Maple Avenue,El Paso,TX,287544,4,2,1905,2001,31.6909,-106.4893,Energy-efficient home with low utility costs,Good
+253,4679 Main Street,Phoenix,AZ,471134,5,2.5,1505,2007,33.3741,-112.0414,Ideal starter home or investment property,Excellent
+254,9047 Elm Circle,Tulsa,OK,283457,4,2,2420,1995,36.0868,-95.9761,Updated kitchen and bathrooms,Good
+255,3033 Orchid Way,Wichita,KS,420000.0,3,2.5,1839,2022,37.7455,-97.3878,Energy-efficient home with low utility costs,Good
+256,9215 Chestnut Court,New York,NY,867955,3,1.5,1377,1991,40.6545,-73.9515,Spacious property with large backyard,Excellent
+257,2170 Ivy Road,Kansas City,MO,504000.0,4,3.5,2329,1993,39.1343,-94.5013,Peaceful setting with mature trees,Good
+258,4660 Olive Way,New York,NY,958080,3,1.5,2528,1999,40.6525,-74.0551,Updated kitchen and bathrooms,Fair
+259,9796 Holly Lane,Albuquerque,NM,532346,3,2.5,1743,1989,35.0696,-106.6484,Family-friendly neighborhood property,Excellent
+260,2028 Laurel Circle,Sacramento,CA,857671,3,3,1382,2005,38.6133,-121.5196,Energy-efficient home with low utility costs,Excellent
+261,940 Violet Boulevard,Baltimore,MD,600000.0,3,3,3192,1997,39.2758,-76.6335,Well-maintained home close to schools,Good
+262,7181 Juniper Way,Fresno,CA,632299,4,2.5,3182,1995,36.7652,-119.7743,Well-maintained home close to schools,Good
+263,9776 Elm Avenue,Jacksonville,FL,409595,5,3,1534,2007,30.2677,-81.6395,Ideal starter home or investment property,Excellent
+264,6850 Dogwood Circle,Chicago,IL,900000.0,4,2,1868,1988,41.7983,-87.6337,Classic style home with modern amenities,Fair
+265,9547 Magnolia Place,Oakland,CA,1560000.0,4,2,1629,1998,37.8292,-122.2936,Modern home with open floor plan,Excellent
+266,8308 Walnut Circle,Wichita,KS,300995,4,3,2236,2002,37.722,-97.2706,Peaceful setting with mature trees,Good
+267,7173 Tulip Lane,Dallas,TX,498604,3,3.5,1695,2013,32.791,-96.7284,Updated kitchen and bathrooms,Fair
+268,818 Cedar Court,Oklahoma City,OK,441552,3,1.5,1505,2007,35.4087,-97.5378,Modern home with open floor plan,Good
+269,2312 Hemlock Road,Indianapolis,IN,464223,4,2.5,1181,2007,39.7912,-86.1367,Spacious property with large backyard,Fair
+270,2233 Main Drive,Kansas City,MO,353047,3,2,1401,1991,39.0804,-94.5799,Move-in ready home with recent upgrades,Excellent
+271,4657 Magnolia Circle,Long Beach,CA,1045447,2,2,2058,2009,33.8393,-118.1284,Energy-efficient home with low utility costs,Good
+272,1289 Poplar Place,Nashville,TN,789910,4,2,1665,1997,36.2035,-86.7539,Convenient location near shopping and parks,Good
+273,9243 Tulip Lane,Fresno,CA,665789,5,3,1237,2014,36.7391,-119.8077,Beautiful family home in a quiet neighborhood,Fair
+274,9149 Magnolia Boulevard,Tampa,FL,744000.0,3,2,2868,1993,27.9933,-82.4114,Charming home with great curb appeal,Good
+275,7414 Beech Court,San Diego,CA,1157983,3,2,1528,2022,32.6938,-117.0912,Peaceful setting with mature trees,Excellent
+276,8777 Lily Drive,Jacksonville,FL,428824,4,1.5,1367,1997,30.2991,-81.6669,Well-maintained home close to schools,Fair
+277,3913 Cypress Street,Memphis,TN,282889,3,2.5,1108,1991,35.1377,-90.117,Beautiful family home in a quiet neighborhood,Excellent
+278,5672 Ivy Lane,Raleigh,NC,770297,4,1.5,2455,1990,35.7339,-78.7002,Ideal starter home or investment property,Good
+279,6887 Ivy Lane,Albuquerque,NM,327292,3,1.5,1534,2010,35.0997,-106.5892,Well-maintained home close to schools,Good
+280,9316 Ivy Avenue,Washington,DC,1320000.0,4,2.5,2349,1986,38.8695,-77.1059,Modern home with open floor plan,Excellent
+281,1862 Pine Boulevard,Memphis,TN,384674,2,3,1952,2004,35.228,-90.0486,Classic style home with modern amenities,Excellent
+282,6488 Sycamore Court,San Francisco,CA,2640000.0,3,3,3138,2003,37.7786,-122.411,Family-friendly neighborhood property,Good
+283,3730 Juniper Drive,San Jose,CA,1243391,4,2,1157,2021,37.2827,-121.8239,Convenient location near shopping and parks,Good
+284,2890 Maple Lane,Boston,MA,1172042,3,3,2452,2019,42.3289,-71.0977,Updated kitchen and bathrooms,Good
+285,6648 Chestnut Court,Atlanta,GA,457692,4,3,1430,2001,33.7503,-84.4643,Beautiful family home in a quiet neighborhood,Good
+286,9567 Sunflower Way,Mesa,AZ,625454,4,1.5,2140,1997,33.3472,-111.7874,Beautiful family home in a quiet neighborhood,Good
+287,1281 Palm Circle,Virginia Beach,VA,494619,2,2,2275,1989,36.8659,-75.9791,Spacious property with large backyard,Fair
+288,9637 Walnut Lane,Raleigh,NC,563274,3,3.5,2346,1999,35.7649,-78.6698,Updated kitchen and bathrooms,Good
+289,324 Palm Boulevard,Charlotte,NC,575314,3,2,1211,2014,35.1943,-80.7859,Energy-efficient home with low utility costs,Good
+290,9774 Rose Street,Philadelphia,PA,750055,3,3,1668,2023,39.8883,-75.1856,Spacious property with large backyard,Good
+291,877 Laurel Way,Boston,MA,1347176,3,3,1502,2017,42.358,-71.075,Spacious property with large backyard,Fair
+292,7178 Juniper Drive,Memphis,TN,399908,4,3.5,1878,2023,35.1652,-90.0505,Comfortable single-family residence,Good
+293,7907 Lily Circle,San Jose,CA,1689303,3,2,2345,2009,37.3,-121.922,Energy-efficient home with low utility costs,Fair
+294,4599 Ash Drive,Boston,MA,1384379,5,2,3172,2002,42.4279,-71.124,Beautiful family home in a quiet neighborhood,Good
+295,3509 Beech Place,El Paso,TX,342949,3,3,2828,1988,31.7844,-106.503,Comfortable single-family residence,Good
+296,7460 Holly Boulevard,Phoenix,AZ,671892,4,1.5,2057,2011,33.3856,-112.0247,Well-maintained home close to schools,Excellent
+297,7160 Hickory Court,Omaha,NE,496557,5,3,2916,2021,41.2573,-95.9377,Charming home with great curb appeal,Good
+298,4068 Maple Lane,Dallas,TX,760527,5,2,2185,2015,32.7826,-96.7483,Bright and airy home with lots of natural light,Good
+299,3579 Orchid Lane,Raleigh,NC,840000.0,4,2,2517,2000,35.8388,-78.6483,Ideal starter home or investment property,Fair
+300,6894 Spruce Avenue,Philadelphia,PA,780000.0,3,2,2515,2019,39.9391,-75.1218,Modern home with open floor plan,Good
+301,3115 Alder Drive,Kansas City,MO,351139,4,2,1307,2013,39.0366,-94.5926,Ideal starter home or investment property,Good
+302,4926 Birch Road,Baltimore,MD,600000.0,5,1.5,3077,2016,39.3155,-76.6192,Classic style home with modern amenities,Good
+303,1023 Hickory Boulevard,Dallas,TX,629575,3,3.5,1787,1999,32.6986,-96.7817,Convenient location near shopping and parks,Good
+304,6043 Walnut Drive,Portland,OR,1029588,3,2,1610,2018,45.5417,-122.6464,Family-friendly neighborhood property,Good
+305,8115 Tulip Avenue,Mesa,AZ,592520,3,3,1870,1993,33.4636,-111.9061,Comfortable single-family residence,Good
+306,8341 Lily Court,Miami,FL,1140000.0,3,2,2510,2009,25.7423,-80.2617,Updated kitchen and bathrooms,Good
+307,8792 Juniper Place,Washington,DC,893003,2,2.5,1194,2013,38.8769,-77.0777,Spacious property with large backyard,Good
+308,7984 Olive Road,Indianapolis,IN,474860,2,2,2909,1999,39.7359,-86.217,Family-friendly neighborhood property,Good
+309,1914 Hemlock Court,Philadelphia,PA,514996,3,3.5,3118,1987,39.9405,-75.1228,Modern home with open floor plan,Good
+310,1851 Main Boulevard,Kansas City,MO,305114,4,2.5,1540,2003,39.131,-94.6145,Family-friendly neighborhood property,Excellent
+311,4041 Willow Way,Sacramento,CA,900000.0,4,2,3142,2003,38.658,-121.571,Ideal starter home or investment property,Good
+312,2953 Daisy Circle,Virginia Beach,VA,720000.0,2,2.5,2502,2002,36.9196,-75.98,Well-maintained home close to schools,Good
+313,1415 Cypress Drive,Louisville,KY,386124,3,3,1316,2007,38.2138,-85.7519,Beautiful family home in a quiet neighborhood,Fair
+314,4194 Walnut Street,Sacramento,CA,766570,2,1.5,1487,2021,38.5544,-121.4327,Comfortable single-family residence,Excellent
+315,934 Palm Court,Mesa,AZ,603371,5,3,2831,1992,33.4002,-111.9114,Ideal starter home or investment property,Good
+316,2175 Cedar Place,Boston,MA,1439831,4,3.5,1221,1992,42.3461,-71.1169,Spacious property with large backyard,Good
+317,6357 Beech Lane,San Jose,CA,1920000.0,5,2,2468,1985,37.3076,-121.848,Comfortable single-family residence,Excellent
+318,5551 Fir Way,Boston,MA,944471,4,3.5,1407,1992,42.3786,-71.0444,Classic style home with modern amenities,Good
+319,892 Cedar Court,San Jose,CA,1787933,4,1.5,1100,2005,37.3366,-121.8338,Convenient location near shopping and parks,Good
+320,390 Daisy Road,Raleigh,NC,512931,3,3,1777,2007,35.7073,-78.7082,Spacious property with large backyard,Good
+321,264 Ash Drive,El Paso,TX,456000.0,3,3.5,3024,1996,31.786,-106.4815,Move-in ready home with recent upgrades,Excellent
+322,4829 Cedar Way,Seattle,WA,1268759,3,2,2064,2006,47.6055,-122.3025,Move-in ready home with recent upgrades,Good
+323,6358 Willow Avenue,Raleigh,NC,840000.0,4,2,3068,1995,35.8444,-78.6733,Well-maintained home close to schools,Excellent
+324,3300 Spruce Boulevard,Nashville,TN,493320,2,2.5,1110,2014,36.1674,-86.7412,Spacious property with large backyard,Good
+325,6933 Fir Avenue,Albuquerque,NM,514350,3,2,2908,2014,35.1287,-106.5954,Energy-efficient home with low utility costs,Good
+326,8766 Lily Circle,Sacramento,CA,900000.0,4,2,1983,2018,38.5346,-121.5514,Modern home with open floor plan,Good
+327,1451 Daisy Lane,Mesa,AZ,643244,3,2,2368,1990,33.4281,-111.877,Beautiful family home in a quiet neighborhood,Fair
+328,9549 Sycamore Avenue,Arlington,TX,624000.0,3,3.5,2864,2009,32.7303,-97.0576,Well-maintained home close to schools,Fair
+329,6586 Sunflower Drive,San Jose,CA,1788140,4,2,3114,2018,37.2594,-121.9118,Bright and airy home with lots of natural light,Good
+330,1473 Dogwood Court,Tulsa,OK,417156,4,2,2562,1992,36.1813,-96.0028,Updated kitchen and bathrooms,Good
+331,2107 Sycamore Way,Mesa,AZ,509619,2,1.5,2449,2019,33.4746,-111.8446,Family-friendly neighborhood property,Good
+332,6743 Laurel Place,San Jose,CA,1920000.0,4,3,2394,1995,37.307,-121.8532,Bright and airy home with lots of natural light,Good
+333,7939 Orchid Drive,Dallas,TX,780000.0,5,3,1660,2020,32.7586,-96.7435,Move-in ready home with recent upgrades,Good
+334,7747 Tulip Road,Las Vegas,NV,542541,2,2,1434,2017,36.2269,-115.1782,Peaceful setting with mature trees,Good
+335,9205 Holly Place,San Antonio,TX,380108,3,3,2454,2020,29.4607,-98.5208,Convenient location near shopping and parks,Fair
+336,6412 Hickory Circle,Las Vegas,NV,612794,5,2,2408,1996,36.1904,-115.153,Comfortable single-family residence,Good
+337,2704 Hemlock Circle,Fresno,CA,670825,4,2.5,1258,1994,36.8009,-119.7842,Well-maintained home close to schools,Good
+338,8635 Dogwood Road,Indianapolis,IN,437186,3,3.5,1703,2002,39.7297,-86.1924,Family-friendly neighborhood property,Good
+339,4733 Holly Way,San Francisco,CA,2134772,3,2,1930,2016,37.78,-122.4235,Energy-efficient home with low utility costs,Fair
+340,1810 Tulip Place,Albuquerque,NM,434220,4,2,3108,2009,35.0335,-106.5715,Beautiful family home in a quiet neighborhood,Excellent
+341,4872 Hemlock Drive,Boston,MA,1405899,4,1.5,1855,2010,42.3303,-71.0069,Updated kitchen and bathrooms,Good
+342,9806 Sycamore Way,San Diego,CA,1483638,4,2,1110,1988,32.6609,-117.131,Updated kitchen and bathrooms,Good
+343,5502 Holly Avenue,Tucson,AZ,391216,4,1.5,1175,2016,32.2125,-110.9638,Classic style home with modern amenities,Good
+344,7987 Birch Avenue,Houston,TX,660000.0,4,2,2086,2020,29.7632,-95.4277,Bright and airy home with lots of natural light,Good
+345,6996 Spruce Drive,Seattle,WA,1351774,4,3,1139,1993,47.5429,-122.3057,Family-friendly neighborhood property,Good
+346,941 Alder Street,Sacramento,CA,590141,5,2.5,1679,2023,38.6418,-121.4841,Well-maintained home close to schools,Good
+347,2329 Elm Road,Houston,TX,476642,3,1.5,2340,2003,29.7682,-95.3243,Ideal starter home or investment property,Good
+348,1368 Beech Circle,Miami,FL,967266,3,3.5,1780,2018,25.6967,-80.2132,Beautiful family home in a quiet neighborhood,Fair
+349,5837 Violet Way,San Francisco,CA,2640000.0,4,2.5,1944,2006,37.8201,-122.4738,Well-maintained home close to schools,Good
+350,2813 Palm Street,Columbus,OH,459335,3,3.5,1153,1994,39.9382,-83.0478,Beautiful family home in a quiet neighborhood,Good
+351,9153 Sunflower Place,Miami,FL,1048300,3,1.5,1122,1992,25.7915,-80.1936,Bright and airy home with lots of natural light,Good
+352,5026 Violet Road,Wichita,KS,398485,4,2.5,2914,2002,37.6386,-97.4042,Ideal starter home or investment property,Good
+353,6100 Birch Place,Raleigh,NC,831047,4,3,3181,2006,35.7056,-78.6675,Classic style home with modern amenities,Good
+354,9519 Willow Court,Detroit,MI,420000.0,4,1.5,2434,2018,42.2908,-83.0708,Charming home with great curb appeal,Good
+355,3997 Fir Place,San Diego,CA,1548431,3,3.5,2275,2005,32.7598,-117.1929,Convenient location near shopping and parks,Good
+356,2488 Olive Avenue,New York,NY,916702,3,2,1376,2004,40.6742,-74.0069,Modern home with open floor plan,Excellent
+357,7550 Ivy Street,Chicago,IL,612989,3,2,1371,1996,41.8489,-87.6045,Spacious property with large backyard,Excellent
+358,6366 Poplar Boulevard,Albuquerque,NM,493349,5,3,1181,2016,35.0331,-106.6534,Peaceful setting with mature trees,Excellent
+359,1381 Oak Court,Jacksonville,FL,474519,3,1.5,1209,2020,30.3565,-81.7077,Spacious property with large backyard,Excellent
+360,4228 Olive Lane,Washington,DC,976906,3,2,2568,2011,38.874,-77.0146,Well-maintained home close to schools,Good
+361,5009 Olive Boulevard,Raleigh,NC,686025,3,3,1397,1998,35.8526,-78.7105,Family-friendly neighborhood property,Good
+362,3170 Orchid Avenue,Fort Worth,TX,654619,5,2.5,3152,2019,32.6993,-97.3156,Charming home with great curb appeal,Good
+363,3469 Cedar Circle,Baltimore,MD,286898,3,1.5,1214,2022,39.2436,-76.6481,Ideal starter home or investment property,Fair
+364,9197 Sunflower Court,San Francisco,CA,2163811,3,1.5,2652,2006,37.7425,-122.4352,Modern home with open floor plan,Fair
+365,4983 Holly Lane,Fort Worth,TX,506597,3,3,2828,1986,32.8027,-97.3592,Family-friendly neighborhood property,Good
+366,6070 Spruce Place,Tucson,AZ,352104,4,1.5,1508,2003,32.2062,-110.9578,Convenient location near shopping and parks,Good
+367,1519 Main Lane,Wichita,KS,269534,4,3,1630,2000,37.6073,-97.3599,Classic style home with modern amenities,Good
+368,3480 Elm Road,Washington,DC,1320000.0,3,1.5,2421,1995,38.8696,-77.0993,Family-friendly neighborhood property,Good
+369,3546 Elm Drive,Tampa,FL,744000.0,4,3.5,2083,2004,27.9987,-82.4212,Family-friendly neighborhood property,Good
+370,2356 Dogwood Road,Louisville,KY,504000.0,3,1.5,1660,2015,38.2213,-85.7278,Well-maintained home close to schools,Good
+371,2871 Willow Lane,Tucson,AZ,576000.0,4,3.5,3075,1994,32.1989,-110.9758,Comfortable single-family residence,Good
+372,983 Poplar Lane,Dallas,TX,504720,4,1.5,2121,1995,32.7076,-96.7467,Family-friendly neighborhood property,Good
+373,8097 Spruce Place,Mesa,AZ,475143,2,1.5,2035,2016,33.3743,-111.8977,Beautiful family home in a quiet neighborhood,Good
+374,166 Willow Boulevard,Philadelphia,PA,608256,2,1.5,2984,1999,40.0022,-75.2442,Move-in ready home with recent upgrades,Fair
+375,3498 Lily Circle,Jacksonville,FL,624000.0,3,3.5,2006,1992,30.2599,-81.6879,Move-in ready home with recent upgrades,Good
+376,5394 Cypress Drive,Louisville,KY,330970,2,3.5,2863,2011,38.3122,-85.7725,Comfortable single-family residence,Excellent
+377,290 Pine Road,Jacksonville,FL,624000.0,4,2.5,2525,2022,30.3829,-81.6341,Convenient location near shopping and parks,Good
+378,2433 Sunflower Road,Fort Worth,TX,447506,2,2,2570,1997,32.7849,-97.4057,Charming home with great curb appeal,Good
+379,7522 Tulip Circle,Washington,DC,1320000.0,3,2,2315,2019,38.8813,-77.0123,Ideal starter home or investment property,Good
+380,4340 Ash Street,Atlanta,GA,632844,2,2.5,2892,2013,33.7753,-84.3371,Move-in ready home with recent upgrades,Good
+381,8448 Maple Boulevard,New York,NY,1068796,2,2.5,1627,1988,40.6341,-74.0659,Move-in ready home with recent upgrades,Good
+382,408 Oak Road,Raleigh,NC,780846,5,2,2868,2014,35.8322,-78.5803,Beautiful family home in a quiet neighborhood,Good
+383,7272 Cedar Court,Long Beach,CA,899149,4,2.5,1401,1987,33.8268,-118.1183,Move-in ready home with recent upgrades,Good
+384,5012 Main Lane,Long Beach,CA,1266195,4,2,1580,2022,33.7632,-118.2543,Ideal starter home or investment property,Good
+385,1891 Hemlock Street,Virginia Beach,VA,574918,3,2,1978,1994,36.9312,-76.0265,Spacious property with large backyard,Excellent
+386,2688 Cypress Drive,Long Beach,CA,1320000.0,3,3.5,2316,1991,33.8336,-118.1944,Convenient location near shopping and parks,Good
+387,4486 Walnut Place,Washington,DC,1320000.0,2,2,1987,1985,38.9745,-76.9626,Convenient location near shopping and parks,Good
+388,3269 Hickory Lane,Nashville,TN,707104,4,2,2071,2021,36.0845,-86.772,Convenient location near shopping and parks,Excellent
+389,1898 Beech Lane,Jacksonville,FL,620640,3,2.5,2965,1989,30.297,-81.6648,Modern home with open floor plan,Fair
+390,3006 Laurel Street,Detroit,MI,224787,5,2,2214,1986,42.2907,-83.0688,Bright and airy home with lots of natural light,Good
+391,2514 Holly Court,Houston,TX,455287,4,1.5,2939,2015,29.823,-95.4492,Move-in ready home with recent upgrades,Good
+392,5562 Willow Place,Indianapolis,IN,504000.0,4,2.5,2066,2006,39.7666,-86.1271,Ideal starter home or investment property,Good
+393,1982 Alder Court,Denver,CO,942765,5,2,2200,2022,39.6664,-105.0676,Comfortable single-family residence,Excellent
+394,1096 Walnut Street,Boston,MA,1268332,2,3.5,1400,1992,42.3057,-71.0841,Classic style home with modern amenities,Fair
+395,509 Pine Street,Fort Worth,TX,660000.0,2,2.5,2607,2000,32.6806,-97.3838,Move-in ready home with recent upgrades,Fair
+396,4368 Hemlock Road,San Diego,CA,914739,3,1.5,1498,1987,32.6577,-117.1547,Peaceful setting with mature trees,Good
+397,3217 Dogwood Street,Baltimore,MD,470706,3,2,2106,2003,39.3404,-76.5656,Comfortable single-family residence,Good
+398,3486 Ash Road,El Paso,TX,453392,3,3,2292,2002,31.7824,-106.5036,Family-friendly neighborhood property,Good
+399,8196 Walnut Road,Portland,OR,948877,4,3.5,1322,2001,45.4469,-122.6866,Peaceful setting with mature trees,Excellent
+400,5572 Maple Street,Virginia Beach,VA,420671,2,3,1317,1992,36.8485,-76.0485,Energy-efficient home with low utility costs,Good
+401,8729 Spruce Way,Dallas,TX,601664,3,3,2631,2004,32.7015,-96.7844,Comfortable single-family residence,Excellent
+402,5468 Sycamore Boulevard,Wichita,KS,358163,5,2,2148,1999,37.6672,-97.2511,Spacious property with large backyard,Good
+403,1916 Cedar Drive,Portland,OR,838388,2,2.5,2308,2020,45.4394,-122.6663,Bright and airy home with lots of natural light,Good
+404,5836 Pine Avenue,Jacksonville,FL,387397,3,2,1914,2014,30.26,-81.6931,Family-friendly neighborhood property,Good
+405,1692 Juniper Place,Miami,FL,1029220,3,2.5,2586,1999,25.7174,-80.2137,Family-friendly neighborhood property,Excellent
+406,4952 Daisy Road,San Antonio,TX,471294,3,2.5,1472,2007,29.4097,-98.4877,Bright and airy home with lots of natural light,Good
+407,677 Dogwood Boulevard,San Diego,CA,1456122,3,2,3154,2015,32.7317,-117.1097,Peaceful setting with mature trees,Excellent
+408,9566 Lily Street,Oakland,CA,805284,3,3.5,1181,2016,37.8504,-122.2812,Comfortable single-family residence,Excellent
+409,2119 Maple Road,Louisville,KY,397297,3,1.5,2647,1997,38.1764,-85.7868,Ideal starter home or investment property,Good
+410,9487 Main Court,New York,NY,1248078,2,2.5,1348,2004,40.7455,-73.9891,Classic style home with modern amenities,Fair
+411,2839 Ivy Drive,Boston,MA,1421840,4,3,1854,1993,42.341,-71.0641,Family-friendly neighborhood property,Excellent
+412,5237 Violet Lane,Virginia Beach,VA,582535,4,2.5,2796,2014,36.8439,-75.971,Peaceful setting with mature trees,Good
+413,7894 Orchid Avenue,Miami,FL,1082487,4,3,3007,2001,25.7594,-80.1177,Ideal starter home or investment property,Excellent
+414,2917 Maple Drive,Portland,OR,723982,5,1.5,2111,2019,45.568,-122.7102,Peaceful setting with mature trees,Fair
+415,6174 Juniper Drive,Chicago,IL,844046,5,1.5,2334,2000,41.906,-87.5718,Energy-efficient home with low utility costs,Good
+416,667 Alder Drive,Oklahoma City,OK,415677,5,2.5,2622,2009,35.5053,-97.5254,Family-friendly neighborhood property,Good
+417,6315 Lily Lane,Oakland,CA,835819,2,3.5,1172,1993,37.8054,-122.3055,Classic style home with modern amenities,Good
+418,9390 Alder Way,Memphis,TN,456000.0,4,1.5,2987,1997,35.1699,-90.0187,Updated kitchen and bathrooms,Fair
+419,4162 Hickory Street,Raleigh,NC,718087,3,2,1371,1995,35.8397,-78.628,Charming home with great curb appeal,Excellent
+420,841 Cedar Place,Baltimore,MD,506589,3,1.5,1622,1998,39.2558,-76.6763,Peaceful setting with mature trees,Fair
+421,2206 Maple Drive,Detroit,MI,420000.0,4,2.5,1834,1990,42.2526,-83.111,Modern home with open floor plan,Fair
+422,4817 Daisy Court,Oakland,CA,1525365,5,1.5,2843,1997,37.8319,-122.3046,Energy-efficient home with low utility costs,Good
+423,602 Cedar Court,Oakland,CA,1560000.0,3,2,2916,1994,37.7743,-122.2197,Energy-efficient home with low utility costs,Fair
+424,5988 Walnut Boulevard,Los Angeles,CA,1680000.0,3,1.5,2026,2022,34.0397,-118.1955,Energy-efficient home with low utility costs,Excellent
+425,4295 Chestnut Court,Houston,TX,539203,3,3.5,1495,2010,29.796,-95.4469,Family-friendly neighborhood property,Good
+426,9007 Beech Street,Houston,TX,660000.0,5,2,2925,1990,29.6976,-95.305,Beautiful family home in a quiet neighborhood,Good
+427,5299 Sunflower Drive,Arlington,TX,358718,4,1.5,1208,2023,32.7488,-97.0722,Classic style home with modern amenities,Excellent
+428,8924 Maple Lane,Chicago,IL,793681,4,2.5,1735,2004,41.8617,-87.6117,Charming home with great curb appeal,Good
+429,9751 Beech Drive,Omaha,NE,504000.0,5,2,3103,1989,41.1853,-95.991,Ideal starter home or investment property,Excellent
+430,5019 Cedar Place,New York,NY,1137056,3,2.5,2766,1987,40.6875,-73.984,Well-maintained home close to schools,Fair
+431,4648 Cypress Drive,Long Beach,CA,1320000.0,5,3.5,1912,2022,33.7325,-118.1439,Well-maintained home close to schools,Good
+432,6652 Daisy Way,Detroit,MI,238969,3,3,1677,2021,42.2659,-83.1023,Energy-efficient home with low utility costs,Good
+433,8253 Hickory Court,Arlington,TX,401295,2,3.5,1741,1989,32.798,-97.1869,Comfortable single-family residence,Good
+434,6952 Sycamore Way,San Jose,CA,1591604,4,2,1745,2023,37.4075,-121.8996,Charming home with great curb appeal,Good
+435,8962 Cedar Place,San Antonio,TX,564466,5,2,2784,1998,29.4103,-98.5725,Modern home with open floor plan,Excellent
+436,8767 Walnut Way,Atlanta,GA,700905,2,2,1452,2022,33.724,-84.4278,Modern home with open floor plan,Good
+437,9304 Hemlock Street,Wichita,KS,420000.0,4,3.5,2956,1987,37.7068,-97.3319,Family-friendly neighborhood property,Good
+438,3140 Poplar Court,Arlington,TX,624000.0,3,2,2310,2007,32.7985,-97.1074,Spacious property with large backyard,Good
+439,5462 Ivy Avenue,San Jose,CA,1855236,3,1.5,2990,2005,37.3119,-121.896,Ideal starter home or investment property,Good
+440,1229 Willow Lane,Charlotte,NC,744000.0,4,3.5,2170,2017,35.281,-80.8005,Beautiful family home in a quiet neighborhood,Excellent
+441,1576 Willow Lane,Long Beach,CA,1320000.0,5,3.5,3040,2001,33.7012,-118.2126,Classic style home with modern amenities,Good
+442,3222 Rose Street,Charlotte,NC,744000.0,3,1.5,3149,2000,35.2879,-80.9016,Modern home with open floor plan,Good
+443,2971 Dogwood Place,Raleigh,NC,758138,4,2.5,2477,2018,35.8151,-78.59,Beautiful family home in a quiet neighborhood,Good
+444,4942 Cypress Street,Denver,CO,865142,5,2,1472,1994,39.7347,-105.0609,Charming home with great curb appeal,Good
+445,8597 Fir Way,Chicago,IL,586870,3,2.5,3180,1987,41.9495,-87.6831,Classic style home with modern amenities,Good
+446,1876 Birch Way,Tucson,AZ,323075,4,2,1457,2008,32.2673,-111.0107,Energy-efficient home with low utility costs,Good
+447,2927 Rose Boulevard,Philadelphia,PA,622028,3,3.5,2047,2005,39.9133,-75.2173,Bright and airy home with lots of natural light,Good
+448,8889 Lily Lane,New Orleans,LA,660000.0,3,3.5,1652,1988,29.9534,-89.9924,Bright and airy home with lots of natural light,Excellent
+449,4785 Main Circle,Nashville,TN,900000.0,3,3,2432,1990,36.1654,-86.7577,Spacious property with large backyard,Excellent
+450,5001 Sunflower Street,Sacramento,CA,900000.0,4,3.5,2443,2005,38.6345,-121.4314,Updated kitchen and bathrooms,Good
+451,5257 Sycamore Street,San Jose,CA,1902478,3,2,2282,1999,37.2626,-121.8782,Spacious property with large backyard,Good
+452,9397 Lily Court,Las Vegas,NV,525006,3,2.5,1724,2005,36.1955,-115.0964,Energy-efficient home with low utility costs,Fair
+453,6655 Hickory Avenue,Philadelphia,PA,543799,3,3,1986,2011,40.0216,-75.2411,Modern home with open floor plan,Fair
+454,388 Elm Drive,San Diego,CA,951458,3,2,1595,2023,32.7565,-117.1771,Well-maintained home close to schools,Good
+455,4628 Daisy Court,San Diego,CA,1546170,4,3,2939,1998,32.6652,-117.1456,Classic style home with modern amenities,Good
+456,2196 Olive Street,Portland,OR,1080000.0,5,3.5,1756,1994,45.53,-122.6235,Bright and airy home with lots of natural light,Good
+457,8026 Chestnut Court,Fresno,CA,696000.0,4,3.5,2730,2017,36.7062,-119.8623,Well-maintained home close to schools,Fair
+458,5236 Alder Street,Memphis,TN,456000.0,3,2,3121,2008,35.1558,-90.0786,Charming home with great curb appeal,Excellent
+459,2878 Hickory Road,Charlotte,NC,691627,5,1.5,2206,2020,35.1963,-80.7803,Peaceful setting with mature trees,Good
+460,2404 Cypress Drive,Philadelphia,PA,479333,3,1.5,1646,2018,39.9603,-75.2291,Family-friendly neighborhood property,Good
+461,9139 Pine Avenue,Sacramento,CA,743647,3,3.5,1504,1991,38.5915,-121.5096,Peaceful setting with mature trees,Good
+462,922 Beech Drive,Oakland,CA,1218265,3,3,2334,1989,37.7606,-122.3163,Well-maintained home close to schools,Excellent
+463,3694 Sycamore Place,Virginia Beach,VA,720000.0,3,3,2626,2001,36.8222,-75.9393,Beautiful family home in a quiet neighborhood,Good
+464,6614 Sunflower Drive,San Francisco,CA,2019756,3,2,2610,2001,37.7412,-122.3423,Modern home with open floor plan,Good
+465,3575 Spruce Circle,Tucson,AZ,435280,2,3,1808,1997,32.2679,-111.0216,Beautiful family home in a quiet neighborhood,Good
+466,7939 Daisy Street,San Francisco,CA,2598601,3,3.5,1674,2019,37.7507,-122.3461,Convenient location near shopping and parks,Good
+467,6723 Sunflower Circle,San Francisco,CA,2640000.0,2,2,3200,2009,37.8133,-122.4519,Move-in ready home with recent upgrades,Fair
+468,4796 Oak Drive,New York,NY,1135403,3,2.5,1177,1997,40.7579,-74.0589,Classic style home with modern amenities,Good
+469,4514 Walnut Avenue,San Antonio,TX,312979,3,2,1259,1999,29.3543,-98.5694,Comfortable single-family residence,Excellent
+470,4980 Alder Way,Omaha,NE,357504,3,1.5,3106,2000,41.3204,-95.8818,Bright and airy home with lots of natural light,Good
+471,561 Sunflower Street,Boston,MA,1400140,5,3,2394,2011,42.3581,-71.1321,Well-maintained home close to schools,Good
+472,2786 Magnolia Drive,Kansas City,MO,384291,3,3,2415,2000,39.0933,-94.602,Ideal starter home or investment property,Good
+473,7796 Beech Avenue,Oakland,CA,1222502,3,3,1485,1988,37.8195,-122.3188,Spacious property with large backyard,Excellent
+474,6500 Birch Place,Tulsa,OK,367433,4,2,1266,1997,36.1879,-96.0612,Classic style home with modern amenities,Good
+475,9487 Palm Court,Kansas City,MO,504000.0,5,2,2011,2018,39.0947,-94.6302,Ideal starter home or investment property,Good
+476,3351 Orchid Circle,Miami,FL,675207,4,2,1132,2014,25.8106,-80.2618,Convenient location near shopping and parks,Good
+477,828 Sunflower Drive,Columbus,OH,428326,3,2.5,1133,2003,40.0199,-83.0569,Move-in ready home with recent upgrades,Excellent
+478,2670 Daisy Boulevard,Fort Worth,TX,584362,5,1.5,2741,2006,32.7804,-97.3601,Comfortable single-family residence,Good
+479,8269 Tulip Drive,Oakland,CA,1452968,4,2,1997,1998,37.7377,-122.343,Peaceful setting with mature trees,Good
+480,3356 Alder Way,Indianapolis,IN,447985,4,2,3064,2011,39.7914,-86.2044,Beautiful family home in a quiet neighborhood,Excellent
+481,2086 Hemlock Road,Portland,OR,659515,4,1.5,1839,2007,45.4391,-122.7196,Family-friendly neighborhood property,Good
+482,4011 Birch Court,Albuquerque,NM,522420,5,3,2831,2018,35.0876,-106.6842,Move-in ready home with recent upgrades,Excellent
+483,7212 Oak Court,Minneapolis,MN,470745,5,3,1209,1987,44.9736,-93.3155,Updated kitchen and bathrooms,Excellent
+484,5773 Orchid Way,Indianapolis,IN,368273,3,2,1188,1994,39.7011,-86.1726,Classic style home with modern amenities,Excellent
+485,9172 Spruce Lane,Denver,CO,712713,5,3.5,1357,1997,39.7805,-104.9421,Peaceful setting with mature trees,Good
+486,283 Beech Drive,Detroit,MI,235249,3,1.5,2389,2013,42.3306,-83.1147,Peaceful setting with mature trees,Good
+487,1211 Rose Road,Indianapolis,IN,450987,3,2,3081,1997,39.7861,-86.1994,Comfortable single-family residence,Good
+488,2278 Chestnut Avenue,Wichita,KS,367441,2,2.5,2073,1987,37.6467,-97.322,Convenient location near shopping and parks,Good
+489,860 Maple Drive,Oakland,CA,1560000.0,3,2.5,2706,2022,37.8171,-122.2921,Comfortable single-family residence,Good
+490,9225 Rose Avenue,Minneapolis,MN,531413,2,3,2847,2014,44.908,-93.2701,Well-maintained home close to schools,Good
+491,1980 Violet Circle,Miami,FL,626016,3,2,1456,2021,25.7972,-80.1954,Classic style home with modern amenities,Good
+492,4398 Alder Place,Tucson,AZ,393309,4,2,1767,2022,32.1571,-110.942,Peaceful setting with mature trees,Good
+493,7449 Lily Street,Detroit,MI,407391,2,3.5,2828,1993,42.2571,-82.9861,Family-friendly neighborhood property,Good
+494,9048 Lily Street,Milwaukee,WI,540000.0,3,2.5,2424,2012,43.1102,-87.9687,Updated kitchen and bathrooms,Good
+495,7220 Oak Lane,Jacksonville,FL,624000.0,3,2,3097,1988,30.3995,-81.664,Energy-efficient home with low utility costs,Good
+496,9041 Daisy Boulevard,Tucson,AZ,552026,3,3,2972,2011,32.1824,-110.9298,Move-in ready home with recent upgrades,Good
+497,295 Violet Street,Oklahoma City,OK,480000.0,4,3.5,2090,1987,35.4996,-97.5946,Ideal starter home or investment property,Excellent
+498,3856 Maple Boulevard,Mesa,AZ,450350,2,3.5,1885,2009,33.4778,-111.7769,Convenient location near shopping and parks,Excellent
+499,4448 Holly Road,El Paso,TX,352847,3,2.5,1122,2005,31.741,-106.5365,Charming home with great curb appeal,Good
+500,2680 Dogwood Road,San Diego,CA,1196142,4,2.5,1997,2020,32.7892,-117.1899,Ideal starter home or investment property,Fair
