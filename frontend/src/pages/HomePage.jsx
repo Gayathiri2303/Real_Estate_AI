@@ -3,7 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { useTheme } from '../context/ThemeContext';
 
-const API_URL = 'https://realestate.gayathiriportfolio.xyz/api';
+// ✅ FIXED: Point to backend, not frontend
+const API_URL = process.env.REACT_APP_API_URL || 'https://real-estate-ai-backend-kappa.vercel.app/api';
 
 function Home() {
   const { theme } = useTheme();
@@ -23,10 +24,61 @@ function Home() {
   const fetchMarketData = async () => {
     try {
       setLoading(true);
-      const response = await axios.get(`${API_URL}/market/overview`);
-      setMarketData(response.data);
+
+      // ✅ FIXED: correct backend route (/market/stats, not /market/overview)
+      const statsRes = await axios.get(`${API_URL}/market/stats`);
+      const stats = statsRes.data || {};
+
+      // Also fetch properties to build top_cities + price_ranges
+      let top_cities = [];
+      let price_ranges = {};
+      try {
+        const propsRes = await axios.get(`${API_URL}/properties`);
+        const properties = propsRes.data?.properties || [];
+
+        // Build top cities
+        const cityCounts = {};
+        properties.forEach(p => {
+          if (p.city) {
+            cityCounts[p.city] = (cityCounts[p.city] || 0) + 1;
+          }
+        });
+        top_cities = Object.entries(cityCounts)
+          .sort((a, b) => b[1] - a[1])
+          .slice(0, 8)
+          .map(([city, count]) => ({ city, count }));
+
+        // Build price ranges
+        const ranges = {
+          '< $300k': 0,
+          '$300k – $500k': 0,
+          '$500k – $750k': 0,
+          '$750k – $1M': 0,
+          '$1M – $1.5M': 0,
+          '> $1.5M': 0
+        };
+        properties.forEach(p => {
+          const price = p.price || 0;
+          if (price < 300000) ranges['< $300k']++;
+          else if (price < 500000) ranges['$300k – $500k']++;
+          else if (price < 750000) ranges['$500k – $750k']++;
+          else if (price < 1000000) ranges['$750k – $1M']++;
+          else if (price < 1500000) ranges['$1M – $1.5M']++;
+          else ranges['> $1.5M']++;
+        });
+        price_ranges = ranges;
+      } catch (e) {
+        console.warn('Properties fetch failed:', e);
+      }
+
+      setMarketData({
+        total_properties: stats.total_properties || 0,
+        average_price: stats.average_price || 0,
+        top_cities,
+        price_ranges
+      });
     } catch (err) {
-      console.error(err);
+      console.error('Market data fetch failed:', err);
     } finally {
       setLoading(false);
     }
@@ -34,12 +86,12 @@ function Home() {
 
   if (loading) {
     return (
-      <div style={{ 
-        display: 'flex', 
-        justifyContent: 'center', 
-        alignItems: 'center', 
+      <div style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
         minHeight: '70vh',
-        background: theme.background 
+        background: theme.background
       }}>
         <div style={{ textAlign: 'center' }}>
           <div style={{ fontSize: '40px', marginBottom: '12px' }}>🏠</div>
@@ -51,7 +103,7 @@ function Home() {
 
   return (
     <div style={{ background: theme.background, minHeight: '100vh' }}>
-      
+
       {/* Hero Section */}
       <div style={{
         background: `linear-gradient(135deg, ${theme.primary} 0%, #3b82f6 50%, #6366f1 100%)`,
@@ -62,18 +114,18 @@ function Home() {
         overflow: 'hidden'
       }}>
         <div style={{ maxWidth: '800px', margin: '0 auto', position: 'relative', zIndex: 2 }}>
-          <h1 style={{ 
-            fontSize: '42px', 
-            fontWeight: 800, 
+          <h1 style={{
+            fontSize: '42px',
+            fontWeight: 800,
             margin: '0 0 16px',
             letterSpacing: '-0.5px',
             lineHeight: 1.2
           }}>
             AI-Powered Real Estate Insights
           </h1>
-          <p style={{ 
-            fontSize: '18px', 
-            opacity: 0.9, 
+          <p style={{
+            fontSize: '18px',
+            opacity: 0.9,
             marginBottom: '32px',
             maxWidth: '560px',
             margin: '0 auto 32px'
