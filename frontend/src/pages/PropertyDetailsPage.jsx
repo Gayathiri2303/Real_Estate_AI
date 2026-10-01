@@ -9,7 +9,7 @@ import VisionUpload from '../components/VisionUpload';
 import ImageUpload from '../components/ImageUpload';
 import PropertyMapLeaflet from '../components/PropertyMapLeaflet';
 
-const API_URL = 'https://realestate.gayathiriportfolio.xyz/api';
+const API_URL = 'https://real-estate-ai-backend-kappa.vercel.app/api';
 
 function PropertyDetailsPage() {
   const { id } = useParams();
