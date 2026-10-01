@@ -12,7 +12,7 @@ import axios from 'axios';
 import toast from 'react-hot-toast';
 import { useTheme } from '../context/ThemeContext';
 
-const API_URL = 'https://realestate.gayathiriportfolio.xyz/api';
+const API_URL = 'https://real-estate-ai-backend-kappa.vercel.app/api';
 
 function VisionUpload({ propertyId, onUploadSuccess }) {
   const { theme } = useTheme();
