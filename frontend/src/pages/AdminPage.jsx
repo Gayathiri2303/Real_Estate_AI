@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { useTheme } from '../context/ThemeContext';
 
-const API_URL = 'https://realestate.gayathiriportfolio.xyz/api';
+const API_URL = 'https://real-estate-ai-backend-kappa.vercel.app/api';
 
 function AdminPage() {
   const navigate = useNavigate();
