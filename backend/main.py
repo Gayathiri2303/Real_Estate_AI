@@ -5,8 +5,8 @@ import csv
 import os
 import random
 
-# Import the routers we just created
-from api import login, property_images, vision, upload
+# Import the routers we just created (chat added!)
+from api import login, property_images, vision, upload, chat
 
 app = FastAPI(
     title="Real Estate AI API",
@@ -28,6 +28,7 @@ app.include_router(login.router, prefix="/api")
 app.include_router(property_images.router, prefix="/api")
 app.include_router(vision.router, prefix="/api")
 app.include_router(upload.router, prefix="/api")
+app.include_router(chat.router, prefix="/api")   # ← NEW! Fixes 404 on /api/chat
 
 # ====================== LOAD 500 PROPERTIES ======================
 PROPERTIES = []
@@ -35,7 +36,7 @@ PROPERTIES = []
 def load_properties():
     global PROPERTIES
     csv_path = os.path.join(os.path.dirname(__file__), "properties_500.csv")
-    
+
     if not os.path.exists(csv_path):
         print("⚠️ CSV file not found")
         PROPERTIES = []
@@ -68,6 +69,9 @@ def load_properties():
 
 # Load data when the app starts
 load_properties()
+
+# Share the loaded properties with the chat router
+chat.set_properties(PROPERTIES)
 
 # ====================== MAIN ENDPOINTS ======================
 
@@ -102,7 +106,7 @@ def get_property(property_id: int):
 def market_stats():
     if not PROPERTIES:
         return {"total_properties": 0, "average_price": 0}
-    
+
     prices = [p["price"] for p in PROPERTIES]
     return {
         "total_properties": len(PROPERTIES),
@@ -121,10 +125,10 @@ def predict(
 ):
     base = 200000
     price = base + (bedrooms * 45000) + (bathrooms * 25000) + (sqft * 180)
-    
+
     age = 2025 - year_built
     price -= age * 1500
-    
+
     if condition.lower() == "excellent":
         price *= 1.15
     elif condition.lower() == "good":
