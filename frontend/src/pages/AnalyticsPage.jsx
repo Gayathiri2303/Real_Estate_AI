@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useTheme } from '../context/ThemeContext';
 
-const API_URL = 'https://realestate.gayathiriportfolio.xyz/api';
+const API_URL = 'https://real-estate-ai-backend-kappa.vercel.app/api';
 
 function AnalyticsPage() {
   const { theme } = useTheme();
