@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const API_URL = 'https://realestate.gayathiriportfolio.xyz/api';
+// ✅ FIXED: Point to backend, not frontend
+const API_URL = process.env.REACT_APP_API_URL || 'https://real-estate-ai-backend-kappa.vercel.app/api';
 
 export const api = {
   // Market Stats
